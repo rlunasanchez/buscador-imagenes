@@ -44,4 +44,7 @@ npm run build
 
 ## Git
 - Repo: https://github.com/rlunasanchez/buscador-imagenes.git
-- Commits subidos: 2
+- Commits subidos: 3
+
+### 5. Footer
+- Agregado footer con "Derechos reservados Rodrigo Luna 2026"
