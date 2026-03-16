@@ -89,6 +89,10 @@ const App = () => {
           ))}
         </div>
       </div>
+
+      <footer>
+        <p>Derechos reservados Rodrigo Luna 2026</p>
+      </footer>
     </div>
   )
 }
