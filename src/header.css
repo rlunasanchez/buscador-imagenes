@@ -116,6 +116,10 @@ footer {
         margin-right: 0;
     }
 
+    header form {
+        margin-top: 8px;
+    }
+
     header {
         position: relative;
     }
@@ -123,6 +127,7 @@ footer {
     .tech-button {
         position: static;
         margin-top: 16px;
+        margin-bottom: 8px;
         width: 100%;
     }
 }
