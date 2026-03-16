@@ -4,18 +4,54 @@ import './header.css'
 import './content.css'
 import './article.css'
 
+const tecnologias = [
+  { nombre: 'React', descripcion: 'Biblioteca JavaScript para construir interfaces de usuario' },
+  { nombre: 'Vite', descripcion: 'Build tool rápida para proyectos web modernos' },
+  { nombre: 'Formik', descripcion: 'Biblioteca para manejar formularios en React' },
+  { nombre: 'Unsplash API', descripcion: 'API para acceder a imágenes de alta calidad' },
+  { nombre: 'CSS3', descripcion: 'Estilos modernos con flexbox, gradientes y animaciones' },
+  { nombre: 'JavaScript ES6+', descripcion: 'Características modernas del lenguaje JavaScript' },
+]
+
 const App = () => {
   const [photos, setPhotos] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [hasSearched, setHasSearched] = useState(false)
+  const [mostrarTecnologias, setMostrarTecnologias] = useState(false)
 
   const open = url => window.open(url, '_blank', 'noopener,noreferrer')
 
   return (
     <div>
+      {mostrarTecnologias && (
+        <div className="modal-overlay" onClick={() => setMostrarTecnologias(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <h2>Tecnologías del Proyecto</h2>
+            <ul className="tech-list">
+              {tecnologias.map((tech, index) => (
+                <li key={index}>
+                  <strong>{tech.nombre}</strong>
+                  <p>{tech.descripcion}</p>
+                </li>
+              ))}
+            </ul>
+            <button className="modal-close" onClick={() => setMostrarTecnologias(false)}>
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
+
       <header>
         <h1>Buscador de Imágenes</h1>
+        <button 
+          className="tech-button" 
+          onClick={() => setMostrarTecnologias(true)}
+          aria-label="Ver tecnologías del proyecto"
+        >
+          Tecnologías
+        </button>
         <Formik
           initialValues={{ search: '' }}
           onSubmit={async (values, { resetForm }) => {
