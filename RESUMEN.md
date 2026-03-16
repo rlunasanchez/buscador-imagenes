@@ -44,7 +44,7 @@ npm run build
 
 ## Git
 - Repo: https://github.com/rlunasanchez/buscador-imagenes.git
-- Commits subidos: 4
+- Commits subidos: 5
 
 ### 5. Footer
 - Agregado footer con "Derechos reservados Rodrigo Luna 2026"
@@ -52,3 +52,6 @@ npm run build
 ### 6. Tecnologías del Proyecto
 - Botón en el header para ver tecnologías usadas
 - Modal con información de: React, Vite, Formik, Unsplash API, CSS3, JavaScript ES6+
+
+### 7. Botón Responsive
+- Botón de tecnologías responsive para mobile y desktop
