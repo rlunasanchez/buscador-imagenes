@@ -15,6 +15,7 @@ const App = () => {
   return (
     <div>
       <header>
+        <h1>Buscador de Imágenes</h1>
         <Formik
           initialValues={{ search: '' }}
           onSubmit={async (values, { resetForm }) => {
@@ -53,7 +54,7 @@ const App = () => {
               id="search"
               name="search" 
               type="search"
-              placeholder="Buscar imágenes..."
+              placeholder="¿Qué imágenes buscas?..."
               aria-label="Buscar imágenes"
             />
           </Form>
