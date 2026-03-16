@@ -1,0 +1,9 @@
+.container {
+    display: flex;    
+    justify-content: center;
+}
+
+.center {
+    max-width: 1200px;
+    column-count: 3;
+}
