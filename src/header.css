@@ -38,6 +38,7 @@ header {
 
 header h1 {
     margin: 0 0 16px 0;
+    margin-right: 100px;
     color: #fff;
     font-size: 28px;
     font-weight: 600;
@@ -106,19 +107,27 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        padding: 20px 16px;
+        padding: 20px 16px 30px;
         border-radius: 0;
     }
     
     header h1 {
         font-size: 22px;
+        margin-right: 0;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .tech-button {
+        position: static;
+        margin-top: 16px;
+        width: 100%;
     }
 }
 
 .tech-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -128,6 +137,16 @@ footer {
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
+}
+
+@media (min-width: 601px) {
+    .tech-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: auto;
+        margin-top: 0;
+    }
 }
 
 .tech-button:hover {
