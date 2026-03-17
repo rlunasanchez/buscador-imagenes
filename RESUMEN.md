@@ -44,7 +44,10 @@ npm run build
 
 ## Git
 - Repo: https://github.com/rlunasanchez/buscador-imagenes.git
-- Commits subidos: 5
+- Commits subidos: 6
+
+### 8. Título del navegador
+- Cambiado de "Vite + React" a "Buscar de imagenes"
 
 ### 5. Footer
 - Agregado footer con "Derechos reservados Rodrigo Luna 2026"
